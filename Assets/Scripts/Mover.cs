@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour
 
     void printToConsole()
     {
-        Debug.Log("I am a new function");
+        //Debug.Log("I am a new function");
     }
     
     void moveThePlayer()
