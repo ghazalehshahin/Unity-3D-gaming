@@ -8,7 +8,11 @@ public class Scorer : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision other)
     {
-        times ++;
-        Debug.Log("You've bumped into barriers for: " + times);
+        if(other.gameObject.tag != "Hit")
+        {
+             times ++;
+             Debug.Log("You've bumped into barriers for: " + times);
+        }
+        
     }
 }
